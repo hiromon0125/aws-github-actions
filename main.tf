@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "hiro-bucket-swen614"
+    key    = "activity-prod/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
+
 # Provider Configuration
 provider "aws" {
   region = "us-east-1"
