@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "hiro-bucket-swen614"
+    bucket = "hiro-terraform-activity-bucket"
     key    = "activity-prod/terraform.tfstate"
     region = "us-east-1"
   }
